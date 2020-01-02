@@ -17,7 +17,7 @@
 						<c:choose>
 							<c:when test='${page.order lt surveyPage.order}'>
 								<spring:url var="url" value="/${survey_base_path}/${survey.id}/${page.order}" />
-								<li class="past"><a href="${url}" title="">&#9658; <c:out value="${page.title}"/></a></li>
+								<li class="past"><a href="${url}" title=""><div class="far fa-check-square"> </div><c:out value=" ${page.title}"/></a></li>
 								<!-- 10004 check mark char -->
 							</c:when>
 							<c:when test='${page.order eq surveyPage.order}'>
@@ -35,7 +35,12 @@
 				<ul class="right-navigation">
 					<c:forEach items="${surveyPages}" var="page" varStatus="loop">
 						<spring:url var="url" value="/${survey_base_path}/${survey.id}/${page.order}" />
-						<li class="past"><a href="${url}" title="">&#9658; <c:out value="${page.title}"/></a></li>
+						<li class="past">
+							<a href="${url}" title="">
+								 <div class="far fa-check-square"> </div>
+								 <c:out value=" ${page.title}"/>
+							</a>
+						</li>
 						<!-- 10004 check mark char -->
 					</c:forEach>	
 					<li class="current"><span class="tab"><spring:message code="rightmenu_finish"/></span></li>						
