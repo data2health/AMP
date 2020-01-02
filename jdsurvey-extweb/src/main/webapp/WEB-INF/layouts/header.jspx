@@ -31,6 +31,77 @@
 				</sec:authorize>
 		<div class="clear-both"><!-- Spacer --></div>
 	</div>
+	
+	<div class="header-search-form">
+			<div class="logo">
+			<img src="${banner}" alt="logo" title="logo"/>
+			</div>
+	</div>
+	
+	<div class="header-middle">
+		<tiles:importAttribute name="activeTab"/>	
+			<c:choose>
+				<c:when test="${activeTab eq 'surveys'}">
+						<c:set var="showMenu" value="true"/>
+						<c:set var="surveyscss" value="pressed"/>
+						<c:set var="statisticscss" value=""/>
+						<c:set var="settingscss" value=""/>
+						<c:set var="admincss" value=""/>
+						<c:set var="securitycss" value=""/>
+						<c:set var="helpcss" value=""/>
+				</c:when>	
+				<c:when test="${activeTab eq 'help'}">
+						<c:set var="showMenu" value="true"/>					
+						<c:set var="surveyscss" value=""/>
+						<c:set var="statisticscss" value=""/>
+						<c:set var="settingscss" value=""/>
+						<c:set var="admincss" value=""/>
+						<c:set var="securitycss" value=""/>
+						<c:set var="helpcss" value="pressed"/>
+				</c:when>
+				<c:when test="${activeTab eq 'myAccount'}">
+						<c:set var="showMenu" value="true"/>
+						<c:set var="surveyscss" value=""/>
+						<c:set var="statisticscss" value=""/>
+						<c:set var="settingscss" value=""/>
+						<c:set var="admincss" value=""/>
+						<c:set var="securitycss" value=""/>
+						<c:set var="helpcss" value=""/>
+						<c:set var="myAccountcss" value="pressed"/>
+				</c:when>		
+				<c:otherwise>
+					<c:set var="showMenu" value="false"/>
+				</c:otherwise>
+			</c:choose>		
+			
+			<c:if test="${showMenu}">	
+				<ul id="topmenu" class="header-navigation">
+					<!-- Surveys -->								
+					<c:url var="url" value="/"/>
+					<li class="topfirst">
+						<a href="${url}" class="${surveyscss}" ><i class="icon-reorder far fa-list-alt" style="margin-right:1px;"> &#160;</i><spring:message code="topmenu_surveys"/></a>
+					</li>
+					
+					<!-- MyAccount -->
+							
+					<c:url var="url" value="/account/show" />
+					<li class="topmenu">
+						<a href="${url}" class="${myAccountcss}" ><i class="icon-question-sign far fa-user-circle"> &#160;</i><spring:message code="topmenu_myAccount"/></a>
+					</li>
+							
+					
+					<!-- Help -->
+					<c:url var="url" value="/help"/>
+					<li class="toplast">
+						<a href="${url}" class="${helpcss}" ><i class="icon-question-sign fas fa-question-circle"> &#160;</i><spring:message code="topmenu_help"/></a>
+					</li>
+				</ul>
+			</c:if>
+				
+		<div class="clear-both"><!-- spacer --></div>
+	</div>
+				
+				
 </div>
 <!-- Header -->
 
