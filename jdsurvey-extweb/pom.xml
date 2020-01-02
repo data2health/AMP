@@ -47,7 +47,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<commons-fileupload.version>1.2.2</commons-fileupload.version>
 		
+		<servlet-api.version>2.4</servlet-api.version>
+		
+		
 		<commons-collections.version>3.1</commons-collections.version>
+		
+		<jsp-api.version>2.0</jsp-api.version>
+		
 		
 		<jasperreports.version>3.7.6</jasperreports.version>
 		<barcode4j.version>2.0</barcode4j.version>
@@ -66,6 +72,21 @@
 	</repositories>
 
 	<dependencies>
+	
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>${jsp-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		
 	
 		<dependency>
  			 <groupId>javax.mail</groupId>
@@ -169,7 +190,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<source>1.6</source>
-					<target>1.6</target>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 		</plugins>
