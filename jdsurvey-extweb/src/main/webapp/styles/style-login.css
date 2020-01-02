@@ -7,7 +7,7 @@ html { height: 100%; }
 body {
 	text-align: center; /*Needed to fix Login IE */
     font-family: Helvetica,sans-serif;
-    background: #4d4d4d;
+    background: #f4f4f5;
     font-weight: 300;
     font-size: 15px;
     color: #333;
@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color: #5599ff;
+    color: #5282b2ff;
 	text-decoration: none;
 }
 
@@ -179,12 +179,12 @@ a {
 
 .form-1 input[type=text]:hover ~ i,
 .form-1 input[type=password]:hover ~ i {
-    color:#F79034;
+    color:#5282b2;
 }
 
 .form-1 input[type=text]:focus ~ i,
 .form-1 input[type=password]:focus ~ i {
-    color:#F79034;
+    color:#5282b2;
 }
 
 .form-1 input[type=text]:focus,
@@ -212,22 +212,6 @@ a {
         inset 0 -3px 2px rgba(0,0,0,0.2);
 }
 
-.form-1 .submit:after {
-    /* Size and position 
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: -2px;
-    left: 30px;*/
-
-    /* Styles 
-    background: #ffffff;*/
-    
-    /* Other masks trick 
-    box-shadow: 0 62px white, -32px 31px white;*/
-}
-
 .form-1 button {
     /* Size and position */
     width: 100%;
@@ -239,16 +223,15 @@ a {
     line-height: 1.75;
     color: white;
 
-    /* Styles #5599FF;*/
     border: none; /* Remove the default border */
     border-radius: inherit;
-    background: #5599FF; /* Fallback */
-    background: -moz-linear-gradient(#5599FF, #5599FF);
-    background: -ms-linear-gradient(#5599FF, #5599FF);
-    background: -o-linear-gradient(#5599FF, #5599FF);
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5599FF), to(#5599FF));
-    background: -webkit-linear-gradient(#5599FF, #5599FF);
-    background: linear-gradient(#5599FF, #5599FF);
+    background: #53575e; /* Fallback */
+    background: -moz-linear-gradient(#53575e, #3c424b);
+    background: -ms-linear-gradient(#53575e, #3c424b);
+    background: -o-linear-gradient(#53575e, #3c424b);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#53575e), to(#3c424b));
+    background: -webkit-linear-gradient(#53575e, #3c424b);
+    background: linear-gradient(#53575e, #3c424b);
     box-shadow: 
         inset 0 1px 0 rgba(255,255,255,0.3),
         0 1px 2px rgba(0,0,0,0.35),
@@ -260,7 +243,7 @@ a {
 
 .form-1 button:hover,
 .form-1 button[type=submit]:focus {
-    background: orange;
+    background: #5282b2;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -269,7 +252,7 @@ a {
 }
 
 .form-1 button:active {
-    background: #42A2BC;
+    background: #5282b2;
     box-shadow: 
         inset 0 0 5px rgba(0,0,0,0.3),
         inset 0 3px 4px rgba(0,0,0,0.3);
@@ -302,7 +285,7 @@ a {
     text-emphasis: accent;
 }
 .forgotDiv a:hover, forgotDiv a:focus  {
-   color:#F79034;
+   color:#5282b2;
 }
 .dontShow{
 	display:none;
@@ -318,7 +301,6 @@ a {
 	height:auto;
 	top:10%;
 	position:absolute;
-	/*margin: 10px 12px;*/
 	font-size: small;
 	padding:7px 7px 7px 27px;
 	border:1px solid #CCC;
