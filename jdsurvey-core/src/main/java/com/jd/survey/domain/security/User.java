@@ -130,8 +130,6 @@ public class User implements Comparable <User>, UserDetails , Serializable , Sec
 
 	
 	@DateTimeFormat(pattern="#{messages['date_format']}")
-	@NotNull(groups={UserInfo.class})
-	@Column(nullable= false)
 	private Date dateOfBirth;
 
 	@NotBlank
