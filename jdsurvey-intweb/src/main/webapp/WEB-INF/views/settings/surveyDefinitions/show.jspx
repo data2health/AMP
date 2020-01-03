@@ -67,8 +67,9 @@
 				
         		<field:display field="description" id="s_com.jd.survey.domain.settings.surveydefinitionpage.surveydefinition.description" object="${surveyDefinition}" cssclass="grid-9-12 alignTop"/>
         		
+        		<!--  Removed this checkbox until we better understand public surveys & how they impact the environment   -->
+        		<!-- <field:display field="isPublic" isBoolean="true" id="s_com.jd.survey.domain.settings.SurveyDefinition.isPublic" object="${surveyDefinition}" /> -->
         		
-        		<field:display field="isPublic" isBoolean="true" id="s_com.jd.survey.domain.settings.SurveyDefinition.isPublic" object="${surveyDefinition}" />
 				<field:display field="allowMultipleSubmissions"  isBoolean="true" id="s_com.jd.survey.domain.settings.SurveyDefinition.allowMultipleSubmissions" object="${surveyDefinition}" />
 				
 				

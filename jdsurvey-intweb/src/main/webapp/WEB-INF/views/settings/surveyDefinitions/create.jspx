@@ -21,13 +21,13 @@
 
    $(document).ready(function(){
 
- $(".isAutoReminderEnabled ").change(function() {
-  		if ( $(this).is(':checked') ) {
-        $(".reminder_frequencies").show();
-    } else {
-        $(".reminder_frequencies").hide();
-    }
-});
+   $(".isAutoReminderEnabled").change(function() {
+	  		if ( $(this).is(':checked') ) {
+	        $(".reminder_frequencies").show();
+	    } else {
+	        $(".reminder_frequencies").hide();
+	    }
+	});
 
 	$("#autoRemindersFrequency").change(function() {
 			var selectedValue = $(this).val();
@@ -210,7 +210,10 @@
 					
 				<!-- Survey Settings -->
 				<spring:message code="isPublic_tip" var="tip"/>
-				<field:checkbox field="isPublic" id="c_com.jd.survey.domain.settings.SurveyDefinition.isPublic"  tip="${tip}" />
+				
+<!--  Removed this checkbox until we better understand public surveys & how they impact the environment   -->
+<!-- 				<field:checkbox field="isPublic" id="c_com.jd.survey.domain.settings.SurveyDefinition.isPublic"  tip="${tip}" /> -->
+
 				<spring:message code="allowMultipleSubmissions_tip" var="tip"/>
 				<field:checkbox field="allowMultipleSubmissions" id="c_com.jd.survey.domain.settings.SurveyDefinition.allowMultipleSubmissions" tip="${tip}"/>
 				<field:textarea field="description" id="c_com.jd.survey.domain.settings.SurveyDefinition.description" cssclass="mceEditor" />
