@@ -22,7 +22,6 @@
 		        <field:input field="firstName" id="c_com.jd.survey.domain.security.User.firstName" cssclass="grid-3-12" maxlength="75" required="true"/>
 				<field:input field="middleName" id="c_com.jd.survey.domain.security.User.middleName" cssclass="grid-3-12"  maxlength="75"/>
 				<field:input field="lastName" id="c_com.jd.survey.domain.security.User.lastName" cssclass="grid-3-12" maxlength="75" required="true"/>
-				<field:input field="dateOfBirth" id="c_com.jd.survey.domain.security.User.dateOfBirth" cssclass="grid-2-12" maxlength="10" required="true"/>
 				<field:input field="email" id="c_com.jd.survey.domain.security.User.email" cssclass="grid-3-12" maxlength="100" required="true"/>
 				<field:checkboxes parentObjectItems="${user.groups}"      pathOnParentObject="groups"      items="${groups}"       itemLabelFieldName="name" itemValueFieldName="id" id="c_com.jd.survey.domain.security.Group"      />
 				<c:if test="${user.type eq 'I'}">
