@@ -11,43 +11,23 @@ ul#topmenu ul{
 	
 }
 
-
-
-
 ul#topmenu ul{
 	display:none;
 	position:absolute;
 	left:2px;
 	top:100%;
-	background-color:#333;
-	/*opacity:0.8;*/
+	background-color:#f4f4f5;
 	margin:0;
-	
-	
-	border-width:1px 1px 1px 1px;
-	border-style:solid;
-	border-color:#333;
-	
+	border: none;
 }
-
-
-
-
-
 
 ul#topmenu li:hover>*{
 	display:block;
 }
 
-
-
 ul#topmenu li:focus>*{
 	display:block;
 }
-
-
-
-
 
 ul#topmenu li{
 position:relative;
@@ -56,8 +36,6 @@ white-space:nowrap;
 font-size:0;
 float:left;
 }
-
-
 
 ul#topmenu li:hover{
 	z-index:1;
@@ -104,79 +82,48 @@ ul#topmenu a:active{
 	outline-style:none;
 }
 
-/*
-ul#topmenu a:focus{
-	outline-style:none;
-}
-*/
-
 ul#topmenu a{
 	display:block;
 	vertical-align:bottom;
 	text-align:middle;
 	text-decoration:none;
 	font:normal 12px Helvetica,sans-serif;
-	color:white;
-	/*text-shadow:#FFF 0 0 1px;*/
+	color:#3a77a4;
 	cursor:pointer;
 	padding:16px 10px 0px 10px;
-	
 	font-weight:bolder;
-	/*
-	border-width:0 0 0 1px;
-	border-style:solid;
-	border-color:#C0C0C0;
-	*/
 	background-color:transparent;
 }
 
 
 ul#topmenu ul li{
 	float:none;
-	/*margin:10px 0 0;*/
 }
-
 
 
 ul#topmenu ul a{
 	text-align:left;
 	padding:4px;
-	
 	background-color:#white;
 	opacity:0.9;
 	background-image:none;
 	border-width:0;
-	color:white;
+	color: #3a77a4;
 	text-decoration:none;
-	text-shadow:#FFF 0 0 0;
+	text-shadow:none;
 }
 
 
-
-
-
 ul#topmenu li:hover>a {
-	color:#5599ff;
-	/*background-color:white;*/
+	color:#274b70;
 	background-position:0 100px;
 	text-decoration:none;
 }
 
 ul#topmenu li a.pressed{
-	/*color:rgb(17,95,181);*/
 	background-position:0 100px;
-	color:#f79034;
+	color:#274b70;
 }
-
-
-/*
-ul#topmenu a:focus>a,ul#topmenu li a:focus{
-	color:#FFF;
-	background-color:#red;
-	background-position:0 100px;
-	text-decoration:none;
-}
-*/
 
 ul#topmenu img{
 	border:none;
@@ -192,26 +139,16 @@ ul#topmenu span{
 }
 
 ul#topmenu ul li:hover>a,ul#topmenu ul li a.pressed{
-	/*background-color:#333333;*/
 	background-image:none;
-	color:#5599ff;
+	color:#274b70;
 	text-decoration:none;
 }
 
-/*
-ul#topmenu ul li:focus>a,ul#topmenu ul li a:focus{
-	background-color:#red;
-	background-image:none;
-	color:#FF8C00;
-	text-decoration:none;
-}
-*/
 
-
-/**********************************Side menu Styles With "CLASS"*************************************************/
-/*****************************It can exist on many parts on the page using CLASS*********************************/
-.sidemenudiv {
-
+/*************************************************************/
+/*****Side menu Styles****************************************/
+#sidemenudiv {
+    font-size: 0.8em;
 }
 
 .sidemenuHeading  {position: absolute; left: -999999px;}
@@ -253,12 +190,12 @@ ul#topmenu ul li:focus>a,ul#topmenu ul li a:focus{
 
 }
 .sidemenu ul li:hover>a{
-	color: #FF8C00;
+	color: #004179;
 	text-decoration:none;
 }
 
 .sidemenu ul li a:focus{
-	color: #FF8C00;
+	color: #004179;
 	text-decoration:none;
 }
 
@@ -297,9 +234,11 @@ ul#sidemenu li{
 	
 	padding:0px;
 }
+
 ul#sidemenu>li{
 	margin:2px 0 0;
 }
+
 ul#sidemenu a:active, ul#sidemenu a:focus{
 	outline-style:none;
 }
@@ -318,12 +257,12 @@ ul#sidemenu a{
 
 
 ul#sidemenu li:hover>a,ul#sidemenu li a.pressed{
-	color: #FF8C00;
+	color: #274b70;
 	text-decoration:none;
 }
 
 ul#sidemenu li a:focus{
-	color: #FF8C00;
+	color: #274b70;
 	text-decoration:none;
 }
 
@@ -335,12 +274,3 @@ margin-right:6px;
 ul#sidemenu li.topfirst>a{
 	border-width:0;
 }
-
-
-
-
-
-
-
-
-
