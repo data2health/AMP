@@ -12,7 +12,7 @@ xmlns:spring="http://www.springframework.org/tags" version="2.0">
 		<div class="single-column">		
 				<!-- Block -->
 				<div class="block boxed">
-					<spring:message code="application_name_label"/>:<spring:message code="application_name" />
+					<spring:message code="application_name_label"/>: <spring:message code="application_name" />
 					<br/>
 					<spring:message code="version_label" />:<spring:message code="application_version" />
 					<br/>
