@@ -35,7 +35,7 @@
 			</sec:authorize>
 		</ul>
 	
-		
+		<div class="clear-both"><!-- Spacer --></div>
 	</div>
   
 	 
